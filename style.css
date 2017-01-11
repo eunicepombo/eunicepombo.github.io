@@ -61,7 +61,7 @@ body {
 
 #jenkins-name-icon {
   position: absolute;
-  bottom: 40px;
+  bottom: -2px;
   left: 70px;
 }
 
