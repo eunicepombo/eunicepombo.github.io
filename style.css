@@ -2137,12 +2137,12 @@ dt {
 
 a:link {
   text-decoration: underline;
-  color: #293d3d;
+  color: #204060;
 }
 
 a:visited {
   text-decoration: underline;
-  color: #5c8a8a;
+  color: #538cc6;
 }
 
 a.lowkey:link {
