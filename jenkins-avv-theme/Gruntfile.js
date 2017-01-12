@@ -11,22 +11,22 @@ module.exports = function (grunt) {
         less: {
             dist: {
                 files: {
-                    "dist/neo-light.css": "less/style.less",
-                    "dist/neo-dark.css": "less/dark.less",
+                    "dist/avv.css": "less/style.less",
+                    "dist/avv-dark.css": "less/dark.less",
                 }
             }
         },
         imageEmbed: {
             light: {
-                src: ["dist/neo-light.css"],
-                dest: "dist/neo-light.css",
+                src: ["dist/avv.css"],
+                dest: "dist/avv.css",
                 options: {
                     deleteAfterEncoding: false
                 }
             },
             dark: {
-                src: ["dist/neo-dark.css"],
-                dest: "dist/neo-dark.css",
+                src: ["dist/avv-dark.css"],
+                dest: "dist/avv-dark.css",
                 options: {
                     deleteAfterEncoding: false
                 }
@@ -35,8 +35,8 @@ module.exports = function (grunt) {
         cssmin: {
             minify: {
                 files: {
-                    'dist/neo-light.css': ['dist/neo-light.css'],
-                    'dist/neo-dark.css': ['dist/neo-dark.css']
+                    'dist/avv.css': ['dist/avv.css'],
+                    'dist/avv-dark.css': ['dist/avv-dark.css']
                 }
             }
         },

@@ -53,9 +53,25 @@ h3 {
   z-index: 1030;
   letter-spacing: 1px;
   padding: 3px;
-  //Custom logo - path here
-  //background: url('logo.png') no-repeat, @color-primary;
-  //background-size: auto 45px, cover; 
+
+  #jenkins-name-icon {
+  left: 80px;
+  }
+
+  #jenkins-head-icon {
+    display: none;
+  }
+
+  .logo {
+    width: 190px;
+    height: 100px;
+    background: url('/Images/logo.png');
+    background-repeat: no-repeat;
+    background-size: auto 50px;
+    margin-top: 0px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
 
   .login {
     top: inherit;
@@ -70,7 +86,7 @@ h3 {
       font-weight: 400;
     }
     //Custom logo - hide the default images, but retain the link
-    //#jenkins-home-link img {
+    //jenkins-home-link img {
     //  opacity: 0;
     //}
   }
@@ -80,7 +96,7 @@ h3 {
   }
 
   #search-box {
-    background: @color-primary;
+    background: @color-white;
     padding: 18px 15px;
     border-radius: 3px;
     height: 26px;
@@ -170,8 +186,9 @@ table.stripped-odd tr:nth-child(odd) {
       background: @color-accent-light;
     }
     a {
-      padding: 5px 10px;
-      border-radius: 0; 
+      padding: 10px 15px;
+      border-radius: 5px 20px;
+      color: @color-darkergrey;
     }
   }
 }
@@ -337,7 +354,7 @@ td {
   }
 }
 
-[style^="color:gray"] {
+[style^="color:grey"] {
   color: @color-grey !important;
 }
 
