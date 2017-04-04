@@ -200,10 +200,10 @@
 }
 
 .icon-credentials, [src$='credentials.png'] {
-  .icon(@size-xl);
+  .icon(@size-auto);
   .icon-img('../images/key.svg', @color-grey);
   &[style^="width: 48px"] {
-    .icon(@size-xl);
+    .icon(@size-auto);
   }
 }
 
@@ -247,7 +247,7 @@ h1 > [src$='diskusage48.png'] {
 
 .icon-backup,[src$='backup-48x48.png'] {
   .icon(@size-md);
-  .icon-img('../images/rss-box.svg', @color-grey);
+  .icon-img('../images/git.svg', @color-grey);
 }
 
 /* Size */
@@ -266,4 +266,8 @@ h1 > [src$='diskusage48.png'] {
 
 .icon-xlg {
   .icon(@size-xl);
+}
+
+.icon-auto {
+  .icon(@size-auto);
 }
