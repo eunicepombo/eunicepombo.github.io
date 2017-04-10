@@ -17,9 +17,7 @@
   background-size: 100% 100% !important;
 }
 
-.img(@url, @wsize, @hsize) {
-  @height: @hsize !important;
-  @width: @wsize !important;
+.img(@url) {
   @url-new: replace("@{url}", "url\('(.+)'\)", "$1");
   @data-uri: data-uri("image/png;base64", '@{url-new}');
   background: e("@data-uri");
