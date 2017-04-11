@@ -183,6 +183,11 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector {
   }
 }
 
+.table, [border^="0"] {
+   margin-left: 2em;
+   margin-top: 2em;
+}
+
 table.stripped-odd tr:nth-child(odd) {
   background: darken(@color-bg, 2%);
 }
@@ -370,6 +375,10 @@ td {
 
 [style^="color:red"] {
   color: @color-red !important;
+}
+
+[class$="excerpt"] > h3 {
+    font-size: 1em;
 }
 
 // make headings on the config pages easier to read

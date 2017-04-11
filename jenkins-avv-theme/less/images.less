@@ -43,7 +43,15 @@
   .icon-img('../images/ic_autorenew_black.svg', @color-green);
 }
 
+a > [src$='blue_anime.gif'] {
+  .icon-img('../images/ic_autorenew_black.svg', @color-green);
+}
+
 .icon-red-anime {
+  .icon-img('../images/ic_autorenew_black.svg', @color-red);
+}
+
+a > [src$='red_anime.gif'] {
   .icon-img('../images/ic_autorenew_black.svg', @color-red);
 }
 
@@ -51,10 +59,22 @@
   .icon-img('../images/ic_autorenew_black.svg', @color-grey);
 }
 
+a > [src$='grey_anime.gif'] {
+  .icon-img('../images/ic_autorenew_black.svg', @color-grey);
+}
+
 .icon-yellow-anime {
   .icon-img('../images/ic_autorenew_black.svg', @color-yellow);
 }
 
+a > [src$='yellow_anime.gif'] {
+  .icon-img('../images/ic_autorenew_black.svg', @color-yellow);
+}
+
+a > [src$='red_anime.gif'],
+a > [src$='grey_anime.gif'],
+a > [src$='yellow_anime.gif'],
+a > [src$='blue_anime.gif'],
 .icon-blue-anime,
 .icon-red-anime,
 .icon-grey-anime,
@@ -78,10 +98,35 @@
 }
 
 .icon-user, [src$='/user.png'] {
+  .icon-img('../images/user.svg', @color-grey);
+}
+
+h1 > [src$='/user.png'] {
   .icon-img('../images/ic_people_black.svg', @color-grey);
 }
 
-.icon-notepad {
+a:hover > [src$='/user.png'] {
+  .icon-img('../images/user.svg', @color-grey);
+}
+
+[src$='notepad.gif'] {
+  .icon-img('../images/write.svg', @color-grey);
+  .icon(@size-xl);
+}
+
+[href$='script'] > .icon-notepad {
+  .icon-img('../images/programming.svg', @color-grey);
+}
+
+[href$='scriptler'] > .icon-notepad {
+  .icon-img('../images/write.svg', @color-grey);
+}
+
+[href$='scriptApproval'] > .icon-notepad {
+  .icon-img('../images/checklist.svg', @color-grey);
+}
+
+[href$='/view/All/builds'] > .icon-notepad {
   .icon-img('../images/ic_history_black.svg', @color-grey);
 }
 
@@ -167,7 +212,7 @@
 }
 
 h1 > [src$='/folder.png'] {
-  .icon-img('../images/folder_color.svg', @color-blue);
+  .icon-img('../images/folder.svg', @color-blue);
 }
 
 .icon-folder-delete {
@@ -249,13 +294,48 @@ h1 > [src$='diskusage48.png'] {
   .icon(@size-md);
 }
 
-[src$='backup-48x48.png'], .icon-bakup {
-  .icon-img('../images/bak.svg', @color-grey);
-  .icon(@size-md);
+[src$='package.gif'] {
+  .icon-img('../images/package-down.svg', @color-grey);
+  .icon(@size-xl);
+}
+
+[src$='backup.png'] {
+  .icon-img('../images/icon_backup.svg', @color-grey);
+  .icon(@size-xl);
+}
+
+[src$='restore.png'] {
+  .icon-img('../images/icon_backup_update.svg', @color-grey);
+  .icon(@size-xl);
+}
+
+[src$='settings.png'] {
+  .icon-img('../images/icon_tools.svg', @color-grey);
+  .icon(@size-xl);
+}
+
+[src$='backup-48x48.png'], .icon-backup {
+  .icon-img('../images/backup-48x48.svg', @color-grey);
+  .icon(@size-xl);
 }
 
 h1 > [src$='folder.png'] {
   .icon-img('../images/folder.svg', @color-blue);
+  .icon(@size-xl);
+}
+
+[src$='save-48x48.png'] {
+  .icon-img('../images/icon_backup.svg', @color-grey);
+  .icon(@size-xl);
+}
+
+[src$='restore-48x48.png'] {
+  .icon-img('../images/icon_unpack.svg', @color-grey);
+  .icon(@size-xl);
+}
+
+[src$='setup-48x48.png'] {
+  .icon-img('../images/icon_tools.svg', @color-grey);
   .icon(@size-xl);
 }
 
