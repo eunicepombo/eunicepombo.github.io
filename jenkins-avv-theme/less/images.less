@@ -166,6 +166,11 @@ a:hover > [src$='/user.png'] {
   .icon-img('../images/ic_lock_black.svg', @color-grey);
 }
 
+[src$='secure.gif'] {
+  .icon-img('../images/ic_lock_black.svg', @color-grey);
+  .icon(@size-xl);
+}
+
 .icon-plugin {
   .icon-img('../images/ic_extension_black.svg', @color-grey);
 }
@@ -181,11 +186,10 @@ a:hover > [src$='/user.png'] {
 .icon-computer {
   .icon-img('../images/ic_computer_black.svg', @color-grey);
 }
-/*
+
 .icon-computer-x {
   .icon-img('../images/computer-x.svg', @color-grey);
 }
-*/
 
 .icon-clipboard {
   .icon-img('../images/ic_assignment_black.svg', @color-grey);
@@ -254,6 +258,11 @@ h1 > [src$='/folder.png'] {
   &[style^="width: 48px; height: 48px; width: 24px; height: 24px; margin: 2px;"] {
     .icon(@size-md);
   }
+}
+
+h1 > [src$='credentials.png'] {
+  .icon(@size-xl);
+  .icon-img('../images/key.svg', @color-grey);
 }
 
 [src$='domain.png'] {
