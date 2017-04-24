@@ -32,7 +32,7 @@ a, a:hover, a:visited, a:link {
 }
 
 h1 {
-    margin-bottom: 10px;
+    margin-bottom: 1em;
     margin-top: 1em;
     font-weight: bold;
     color: @color-darkblue;
@@ -46,7 +46,7 @@ h2 {
 
 h3 {
     color: #c9851d;
-    font-size: 3em;
+    font-size: 1em;
     font-weight: normal;
 }
 
@@ -72,11 +72,11 @@ h3 {
   
   .logo {
     position: relative;
-    width: 350px;
+    width: 320px;
     height: 40px;
     background: url('../../Images/avv_altran.png');
     background-repeat: no-repeat;
-    background-size: 340px 38px;
+    background-size: 310px 38px;
     background-position: 0px 0px;
     margin-top: 0px;
     margin-left: 5px;
@@ -139,7 +139,7 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector {
 }
 
 #disable-project {
-  float: right;
+  display: block;
 }
 
 #notification-bar{
@@ -182,14 +182,20 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector {
     background-color: transparent;
   }
 }
-
+/*
 .table, [border^="0"] {
    margin-left: 2em;
    margin-top: 2em;
 }
+*/
 
 table.stripped-odd tr:nth-child(odd) {
   background: darken(@color-bg, 2%);
+}
+
+[src$='switch-on.png'], [src$='switch-off.png'] {
+  padding-left: 36.72px !important;
+  padding-top: 36.72px !important;
 }
 
 .tabBar {
@@ -235,6 +241,19 @@ table.stripped-odd tr:nth-child(odd) {
       background-color: @color-accent-light !important;
     }
   }
+  
+  .build-row.multi-line .build-row-cell .block {
+	overflow: inherit;
+	display: block;
+  }
+  
+  .build-row .build-name-controls .pane.build-name, .build-row .build-details-controls .pane.build-details {
+	width: 75px !important;
+}
+}
+
+div[style="float:right"] {
+  margin-top: 4em;
 }
 
 footer {
@@ -248,6 +267,10 @@ footer {
   a {
     margin-right: 10px; 
     font-weight: 600;
+    img {
+      margin-right: 0em !important;
+      .icon(@size-xl);
+    }
   }
   tr {
     display: block;
@@ -318,6 +341,7 @@ td {
   background-color: transparent !important
 }
 
+
 #jenkins .yui-button {
   button {
     text-decoration: none;
@@ -353,6 +377,7 @@ td {
   vertical-align: middle;
 }
 
+
 .console-output, .console-output * {
   position: relative;
   font-family: @font-console, Courier, monospace !important;
@@ -379,6 +404,10 @@ td {
 
 [class$="excerpt"] > h3 {
     font-size: 1em;
+}
+
+td > [src$='robot.png'] {
+  float: right;
 }
 
 // make headings on the config pages easier to read
